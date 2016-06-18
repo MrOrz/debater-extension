@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Debater editor tool",
+  "description": "Copies selected text, organizes it into debater markdown format and copy to clipboard",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+  },
+  "permissions": [
+    "activeTab",
+  ]
+}
+
