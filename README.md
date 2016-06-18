@@ -10,3 +10,7 @@ https://github.com/MrOrz/debater-extension/raw/master/dist/debater-extension.crx
 1. 下載上述 CRX 檔
 2. [點這裡打開 Google Chrome 擴充功能頁面](chrome://extensions)
 3. 把 CRX 檔拖曳到 Google Chrome 擴充功能頁面中
+
+## 回報錯誤
+如果遇到無法使用的情形，請到 Facebook 討論串回報問題（附上無法使用的文章連結）：
+https://www.facebook.com/groups/597161320435546/permalink/656227644528913/
