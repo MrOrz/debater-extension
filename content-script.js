@@ -73,7 +73,10 @@ function generateMarkdownFromSelection() {
       +" "+link.href+"\n- "+text);
     console.log("# "+ author+"\n### "+time+"\n"+link.href+"\n-"+text);
   }else{
-    var author = container.node.querySelectorAll("[aria-owns]")[0].innerText;
+    var author = (
+      container.node.querySelectorAll("[aria-owns]")[0] ||
+      container.node.querySelectorAll("[data-hovercard]")[1]
+    ).innerText;
     var timenode = container.node.querySelectorAll("[data-utime]")[0];
     var link = timenode.parentNode;
     var time = new Date(parseInt(timenode.dataset.utime,10)*1000);
