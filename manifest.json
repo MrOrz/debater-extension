@@ -4,12 +4,21 @@
   "name": "Debater editor tool",
   "description": "Copies selected text, organizes it into debater markdown format and copy to clipboard",
   "version": "0.1",
-
-  "browser_action": {
-    "default_icon": "icon.png",
+  "icons": {
+    "16": "debater-logo.png"
   },
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
   "permissions": [
+    "contextMenus",
     "activeTab",
+    "https://www.facebook.com/"
   ]
 }
-
