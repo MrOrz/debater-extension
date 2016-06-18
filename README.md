@@ -4,4 +4,7 @@
 
 ![Workflow](http://i.giphy.com/3o72F3b9wlPvltY2Tm.gif)
 
-## 安裝網址
+## 安裝／安裝
+https://github.com/MrOrz/debater-extension/raw/master/dist/debater-extension.crx
+
+下載後，拖曳到 Google Chrome 視窗即可安裝。
