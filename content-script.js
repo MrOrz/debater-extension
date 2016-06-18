@@ -2,8 +2,12 @@ console.log('content-script')
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if(message && message.action === 'FETCH') {
-    copyToClipboard(generateMarkdownFromSelection());
-    console.log('copied');
+    const md = generateMarkdownFromSelection()
+    copyToClipboard(md);
+    sendResponse({
+      status: 'SUCCESS',
+      message: `Copied to clipboard:\n${md}`
+    })
   }
 })
 

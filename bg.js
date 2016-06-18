@@ -5,5 +5,16 @@ chrome.contextMenus.create({
 })
 
 function handleContextMenuClick(info, tab) {
-  chrome.tabs.sendMessage(tab.id, {action: 'FETCH'})
+  chrome.tabs.sendMessage(tab.id, {action: 'FETCH'}, resp => {
+    if(resp.status === 'SUCCESS') {
+      chrome.notifications.create({
+        type: 'basic',
+        iconUrl: './debater-logo.png',
+        title: 'Debater editor tool',
+        message: resp.message,
+      })
+    } else {
+      alert(resp.message)
+    }
+  })
 }
