@@ -5,7 +5,5 @@ chrome.contextMenus.create({
 })
 
 function handleContextMenuClick(info, tab) {
-  chrome.tabs.sendMessage(tab.id, {action: 'FETCH'}, {}, resp => {
-    console.log('context menu', resp)
-  })
+  chrome.tabs.sendMessage(tab.id, {action: 'FETCH'})
 }
