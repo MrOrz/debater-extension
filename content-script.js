@@ -1,9 +1,24 @@
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if(message && message.action === 'FETCH') {
-    sendResponse(generateMarkdownFromSelection())
+    copyToClipboard(generateMarkdownFromSelection());
+    console.log('copied');
   }
 })
+
+function copyToClipboard(text) {
+  // Ref: https://gist.github.com/joeperrin-gists/8814825
+  //
+
+  const textarea = document.createElement('textarea');
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = 0;
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('Copy');
+  document.body.removeChild(textarea);
+};
 
 function generateMarkdownFromSelection() {
   // From tonyQ

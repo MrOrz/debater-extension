@@ -19,6 +19,8 @@
   "permissions": [
     "contextMenus",
     "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
     "https://www.facebook.com/"
   ]
 }
