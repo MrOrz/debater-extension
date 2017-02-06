@@ -79,11 +79,17 @@ function getContainedNode(node){
   while(p){
     if(p && p.classList){
 
-      if(p.classList.contains("UFIComment")){
+      if(
+        p.classList.contains("UFIComment") ||
+        p.getAttribute('aria-label') === 'Comment'
+      ){
         return {type:"comment",node:p};
       }
 
-      if(p.classList.contains("userContentWrapper")){
+      if(
+        p.classList.contains("userContentWrapper") ||
+        p.getAttribute('aria-label') === 'Story'
+      ){
         return {type:"post",node:p};
       }
     }
