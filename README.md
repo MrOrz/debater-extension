@@ -4,12 +4,8 @@
 
 ![Workflow](http://i.giphy.com/3o72F3b9wlPvltY2Tm.gif)
 
-## 安裝／安裝
-https://github.com/MrOrz/debater-extension/raw/master/dist/debater-extension.crx
-
-1. 下載上述 CRX 檔
-2. [點這裡打開 Google Chrome 擴充功能頁面](chrome://extensions)
-3. 把 CRX 檔拖曳到 Google Chrome 擴充功能頁面中
+## 安裝
+https://chrome.google.com/webstore/detail/debater-editor-tool/ldfkomohgfgbnnolmbhcmecapdflljpi
 
 ## 回報錯誤
 如果遇到無法使用的情形，請到 Facebook 討論串回報問題（附上無法使用的文章連結）：

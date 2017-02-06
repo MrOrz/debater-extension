@@ -3,7 +3,7 @@
 
   "name": "Debater editor tool",
   "description": "Copies selected text, organizes it into debater markdown format and copy to clipboard",
-  "version": "0.1",
+  "version": "0.2",
   "icons": {
     "16": "debater-logo.png"
   },
